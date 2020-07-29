@@ -2,9 +2,9 @@
 
 const TASK_COUNT = 3;
 
- const createSiteMenuTemplate = () => {
-   return (
-     `<section class="control__btn-wrap">
+const createSiteMenuTemplate = () => {
+  return (
+    `<section class="control__btn-wrap">
        <input
          type="radio"
          name="control"
@@ -32,10 +32,10 @@ const TASK_COUNT = 3;
          >STATISTICS</label
        >
      </section>`
-   );
- };
+  );
+};
 
- const createFilterTemplate = () => {
+const createFilterTemplate = () => {
   return (
     `<section class="main__filter filter container">
       <input
@@ -368,8 +368,8 @@ const createLoadMoreButtonTemplate = () => {
   );
 };
 
- const render = (container, template, place) => {
-   container.insertAdjacentHTML(place, template);
+const render = (container, template, place) => {
+  container.insertAdjacentHTML(place, template);
 };
 
 const siteMainElement = document.querySelector(`.main`);
